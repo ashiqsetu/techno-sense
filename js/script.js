@@ -486,6 +486,74 @@
 	}
 
 
+	// Clients Carousel
+	if ($('.clients-list').length) {
+
+		$('.clients-list').owlCarousel({
+
+			animateOut: 'fadeOut',
+
+			animateIn: 'fadeIn',
+
+			loop: true,
+
+			margin: 20,
+
+			nav: true,
+
+			smartSpeed: 500,
+
+			drag: true,
+
+			autoplay: 6000,
+
+			navText: ['<span class="fa fa-angle-left"></span>', '<span class="fa fa-angle-right"></span>'],
+
+			responsive: {
+
+				0: {
+
+					items: 1
+
+				},
+
+				600: {
+
+					items: 5
+
+				},
+
+				800: {
+
+					items: 5
+
+				},
+
+				1024: {
+
+					items: 3
+
+				},
+
+				1200: {
+
+					items: 4
+
+				},
+
+				1500: {
+
+					items: 5
+
+				}
+
+			}
+
+		});
+
+	}
+
+
 
 
 
@@ -631,33 +699,33 @@
 
 
 
-	// Portfolios work 
+	// gallery work 
 
-	$('.portfolio-section').imagesLoaded(function () {
-		var $grid = $('.portfolioContainer').isotope({
-			itemSelector: '.portfolio-item',
+	$('.gallery-section').imagesLoaded(function () {
+		var $grid = $('.galleryContainer').isotope({
+			itemSelector: '.gallery-item',
 			percentPosition: true,
 		})
 
-		// Portfolio filtering activation
-		$('.portfolio-filter li a').on('click', function () {
+		// gallery filtering activation
+		$('.gallery-filter li a').on('click', function () {
 			var filterValue = $(this).attr('data-filter');
 			$grid.isotope({ filter: filterValue });
 		});
 
 		// Filter menu active class addition  
-		$('.portfolio-filter li').on('click', function (event) {
+		$('.gallery-filter li').on('click', function (event) {
 			$(this).siblings('.active').removeClass('active');
 			$(this).addClass('active');
 			event.preventDefault();
 		});
 
-		// LOAD MORE BUTTON FOR PORTFOLIO
+		// LOAD MORE BUTTON FOR gallery
 		$('.load-more-btn').on('click', function (event) {
-			$('.portfolio-item').removeClass('hidden');
-			var $grid = $('.portfolioContainer').isotope();
+			$('.gallery-item').removeClass('hidden');
+			var $grid = $('.galleryContainer').isotope();
 			$(this).hide();
-			$('.portfolio-section .load-more').append('<a class="button btn-red-top load-more-btn" href="javascript:void(0)">No More Items</a>')
+			$('.gallery-section .load-more').append('<a class="button btn-red-top load-more-btn" href="javascript:void(0)">No More Items</a>')
 			event.preventDefault();
 		});
 	});
@@ -722,9 +790,6 @@
 		});
 
 	}
-
-
-
 
 
 
