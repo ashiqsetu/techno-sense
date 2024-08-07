@@ -497,6 +497,8 @@
 
 			loop: true,
 
+			infinite: true,
+
 			margin: 20,
 
 			nav: true,
@@ -505,7 +507,7 @@
 
 			drag: true,
 
-			autoplay: 6000,
+			autoplay: 1000,
 
 			navText: ['<span class="fa fa-angle-left"></span>', '<span class="fa fa-angle-right"></span>'],
 
@@ -544,6 +546,77 @@
 				1500: {
 
 					items: 5
+
+				}
+
+			}
+
+		});
+
+	}
+
+
+
+	// TeamCarousel
+	if ($('.teamCarousel').length) {
+
+		$('.teamCarousel').owlCarousel({
+
+			animateOut: 'fadeOut',
+
+			animateIn: 'fadeIn',
+
+			loop: true,
+
+			infinite: true,
+
+			margin: 20,
+
+			nav: true,
+
+			smartSpeed: 500,
+
+			drag: true,
+
+			autoplay: 1000,
+
+			navText: ['<span class="fa fa-angle-left"></span>', '<span class="fa fa-angle-right"></span>'],
+
+			responsive: {
+
+				0: {
+
+					items: 1
+
+				},
+
+				600: {
+
+					items: 5
+
+				},
+
+				800: {
+
+					items: 5
+
+				},
+
+				1024: {
+
+					items: 3
+
+				},
+
+				1200: {
+
+					items: 4
+
+				},
+
+				1500: {
+
+					items: 4
 
 				}
 
@@ -1171,6 +1244,21 @@
 		handlePreloader();
 
 	});
+
+
+	// Parallax on Mousemove
+	document.addEventListener('mousemove', parallax);
+
+	function parallax(event) {
+		this.querySelectorAll('.parallax').forEach(layer => {
+			const speed = layer.getAttribute('data-speed');
+
+			const x = (window.innerWidth - event.pageX + speed) / 250;
+			const y = (window.innerHeight - event.pageY + speed) / 250;
+
+			layer.style.transform = `translateX(${x}px) translateY(${y}px)`;
+		})
+	}
 
 
 

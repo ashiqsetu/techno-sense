@@ -35,8 +35,8 @@
 							<!-- Main Menu -->
 							<nav class="main-menu navbar-expand-md">
 								<div class="navbar-header">
-									<button class="navbar-toggler" type="button" data-toggle="collapse"
-										data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+									<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+										data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
 										aria-expanded="false" aria-label="Toggle navigation">
 										<span class="icon-bar"></span>
 										<span class="icon-bar"></span>
@@ -90,8 +90,8 @@
 						<div class="right-col">
 							<!-- Main Menu -->
 							<nav class="main-menu navbar-expand-md">
-								<button class="navbar-toggler" type="button" data-toggle="collapse"
-									data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1"
+								<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+									data-bs-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1"
 									aria-expanded="false" aria-label="Toggle navigation">
 									<span class="icon-bar"></span>
 									<span class="icon-bar"></span>
@@ -143,25 +143,36 @@
 
 		<!-- Banner Section Three -->
 		<section class="banner-section-three clearfix">
-			<div class="image-layer-two" style="background-image:url(images/background/pattern-11.png)"></div>
-			<div class="image-layer" style="background-image:url(images/background/pattern-10.png)">
-				<div class="icon-box">
+			<div class="image-layer-two parallax" data-speed="0.5"
+				style="background-image:url(images/background/pattern-11.png)"></div>
+			<img class="image-layer-three parallax" data-speed="0.9" src="images/background/pattern-3.png" alt="">
+			<!-- style="background-image:url(images/background/pattern-10.png)" -->
+			<div class="image-layer">
+				<div class="icon-box parallax" data-speed="0.7">
 					<a href="https://www.youtube.com/watch?v=kxPCFljwJws" class="lightbox-image play-icon wow bounceIn"
 						data-wow-delay="0ms" data-wow-duration="1500ms"><span class="flaticon-play-button"></span></a>
 					<span class="ripple"></span>
 				</div>
 			</div>
-			<div class="container">
-				<div class="clearfix">
-					<div class="content">
-						<div class="title"><span>Techno Sense Limited</span></div>
-						<h1>Empowering Your <span>Vision</span> with <br> Powerful <span> Software Solution.</span></h1>
-						<div class="btn-box">
-							<a href="#portfolio" class="theme-btn btn-style-five"><span class="txt">Our
-									Portfolio</span>
-							</a>
-							<a href="#" class="theme-btn btn-style-two"><span class="txt">Innsense</span></a>
-							<a href="#" class="theme-btn btn-style-three"><span class="txt">Bizsense</span></a>
+			<div class="banner-section-wrapper">
+				<div class="container">
+					<div class="clearfix banner-wrapper">
+						<div class="content">
+							<div class="title"><span>Techno Sense Limited</span></div>
+							<h1>Empowering Your <span>Vision</span> with <br> Powerful <span> Software Solution.</span>
+							</h1>
+							<div class="btn-box">
+								<a href="#portfolio" class="theme-btn btn-style-five"><span class="txt">Our
+										Portfolio</span>
+								</a>
+								<a href="#" class="theme-btn btn-style-two"><span class="txt">Innsense</span></a>
+								<a href="#" class="theme-btn btn-style-three"><span class="txt">Bizsense</span></a>
+							</div>
+						</div>
+						<div class="hero-content">
+							<img class="hero-img" src="images/banner/hero-1.webp">
+							<img class="hero-bg hero-bg-1" src="images/banner/hero-2.png">
+							<img class="hero-bg hero-bg-2" src="images/banner/hero-3.png">
 						</div>
 					</div>
 				</div>
@@ -390,8 +401,10 @@
 				</div>
 				<div class="portfolios-list">
 
-					<a href="#" class="single-portfolio">
-						<img src="images/portfolio/innsense.png" alt="">
+					<a class="single-portfolio">
+						<div class="portfolio-img">
+							<img src="images/portfolio/innsense.png" alt="Innsense">
+						</div>
 						<h3>Innsense</h3>
 						<p>Innsense- Hotel Management ERP System. Credible Source for Interactive & Affordable Web
 							Based Property Management ERP System. Innsense is an all-in-one Hotel Management ERP
@@ -400,9 +413,10 @@
 							allows customizations.</p>
 					</a>
 
-
-					<a href="#" class="single-portfolio">
-						<img src="images/portfolio/bizsense.png" alt="">
+					<a class="single-portfolio">
+						<div class="portfolio-img">
+							<img src="images/portfolio/bizsense.png" alt="Bizsense">
+						</div>
 						<h3>Bizsense</h3>
 						<p>Bizsense- All in one Business Management ERP System. Credible Source for Interactive &
 							Affordable Web Based Business Management ERP System. Bizsensse is an all-in-one Business
@@ -428,39 +442,222 @@
 					<div class="col-md-12">
 						<div class="clients-list owl-carousel owl-theme">
 							<div class="single-client">
-								<img src="images/clients/seamoon.png" class="img-fluid" alt="" loading="lazy">
+								<img src="images/clients/Balishira Resort.png" class="img-fluid" alt="" loading="lazy">
 								<h3>
-									<a href="#">Patronize Sea Moon Hotel</a>
+									<a href="#">Balishira Resort</a>
 								</h3>
 							</div>
 							<div class="single-client">
-								<img src="images/clients/seamoon.png" class="img-fluid" alt="" loading="lazy">
+								<img src="images/clients/Dhalis Amber Nivaas Resort.png" class="img-fluid" alt=""
+									loading="lazy">
 								<h3>
-									<a href="#">Patronize Sea Moon Hotel</a>
+									<a href="#">Dhalis Amber Nivaas Resort</a>
 								</h3>
 							</div>
 							<div class="single-client">
-								<img src="images/clients/seamoon.png" class="img-fluid" alt="" loading="lazy">
+								<img src="images/clients/D'more Hotel.png" class="img-fluid" alt="" loading="lazy">
 								<h3>
-									<a href="#">Patronize Sea Moon Hotel</a>
+									<a href="#">D'more Hotel</a>
 								</h3>
 							</div>
 							<div class="single-client">
-								<img src="images/clients/seamoon.png" class="img-fluid" alt="" loading="lazy">
+								<img src="images/clients/Ezzy Group.jpg" class="img-fluid" alt="" loading="lazy">
 								<h3>
-									<a href="#">Patronize Sea Moon Hotel</a>
+									<a href="#">Ezzy Group</a>
 								</h3>
 							</div>
 							<div class="single-client">
-								<img src="images/clients/seamoon.png" class="img-fluid" alt="" loading="lazy">
+								<img src="images/clients/Fars Hotel & Resorts.png" class="img-fluid" alt=""
+									loading="lazy">
 								<h3>
-									<a href="#">Patronize Sea Moon Hotel</a>
+									<a href="#">Fars Hotel & Resorts</a>
 								</h3>
 							</div>
 							<div class="single-client">
-								<img src="images/clients/seamoon.png" class="img-fluid" alt="" loading="lazy">
+								<img src="images/clients/Galesia Hotel.png" class="img-fluid" alt="" loading="lazy">
 								<h3>
-									<a href="#">Patronize Sea Moon Hotel</a>
+									<a href="#">Galesia Hotel</a>
+								</h3>
+							</div>
+							<div class="single-client">
+								<img src="images/clients/Grand Palace Hotel.png" class="img-fluid" alt=""
+									loading="lazy">
+								<h3>
+									<a href="#">Grand Palace Hotel</a>
+								</h3>
+							</div>
+							<div class="single-client">
+								<img src="images/clients/Heed Bangladesh.png" class="img-fluid" alt="" loading="lazy">
+								<h3>
+									<a href="#">Heed Bangladesh</a>
+								</h3>
+							</div>
+							<div class="single-client">
+								<img src="images/clients/Hotel 71.png" class="img-fluid" alt="" loading="lazy">
+								<h3>
+									<a href="#">Hotel 71</a>
+								</h3>
+							</div>
+							<div class="single-client">
+								<img src="images/clients/Hotel Ambassador.png" class="img-fluid" alt="" loading="lazy">
+								<h3>
+									<a href="#">Hotel Ambassador</a>
+								</h3>
+							</div>
+							<div class="single-client">
+								<img src="images/clients/Hotel Aristocrat Inn.png" class="img-fluid" alt=""
+									loading="lazy">
+								<h3>
+									<a href="#">Hotel Aristocrat Inn</a>
+								</h3>
+							</div>
+							<div class="single-client">
+								<img src="images/clients/Hotel Castle Salam.png" class="img-fluid" alt=""
+									loading="lazy">
+								<h3>
+									<a href="#">Hotel Castle Salam</a>
+								</h3>
+							</div>
+							<div class="single-client">
+								<img src="images/clients/Hotel Givenci.png" class="img-fluid" alt="" loading="lazy">
+								<h3>
+									<a href="#">Hotel Givenci</a>
+								</h3>
+							</div>
+							<div class="single-client">
+								<img src="images/clients/Hotel Grand Placid.png" class="img-fluid" alt=""
+									loading="lazy">
+								<h3>
+									<a href="#">Hotel Grand Placid</a>
+								</h3>
+							</div>
+							<div class="single-client">
+								<img src="images/clients/Hotel Grand Riverview.png" class="img-fluid" alt=""
+									loading="lazy">
+								<h3>
+									<a href="#">Hotel Grand Riverview</a>
+								</h3>
+							</div>
+							<div class="single-client">
+								<img src="images/clients/Hotel Grand Royal.png" class="img-fluid" alt="" loading="lazy">
+								<h3>
+									<a href="#">Hotel Grand Royal</a>
+								</h3>
+							</div>
+							<div class="single-client">
+								<img src="images/clients/Hotel Progati Inn.png" class="img-fluid" alt="" loading="lazy">
+								<h3>
+									<a href="#">Hotel Progati Inn</a>
+								</h3>
+							</div>
+							<div class="single-client">
+								<img src="images/clients/Hotel Royal Bengal.png" class="img-fluid" alt=""
+									loading="lazy">
+								<h3>
+									<a href="#">Hotel Royal Bengal</a>
+								</h3>
+							</div>
+							<div class="single-client">
+								<img src="images/clients/Hotel The Cox Today.png" class="img-fluid" alt=""
+									loading="lazy">
+								<h3>
+									<a href="#">Hotel The Cox Today</a>
+								</h3>
+							</div>
+							<div class="single-client">
+								<img src="images/clients/Hotel x.png" class="img-fluid" alt="" loading="lazy">
+								<h3>
+									<a href="#">Hotel x</a>
+								</h3>
+							</div>
+							<div class="single-client">
+								<img src="images/clients/Khairul International Hotel.png" class="img-fluid" alt=""
+									loading="lazy">
+								<h3>
+									<a href="#">Khairul International Hotel</a>
+								</h3>
+							</div>
+							<div class="single-client">
+								<img src="images/clients/KNB Agro Industries Limited.jpg" class="img-fluid" alt=""
+									loading="lazy">
+								<h3>
+									<a href="#">KNB Agro Industries Limited</a>
+								</h3>
+							</div>
+							<div class="single-client">
+								<img src="images/clients/Novem Eco Resort.png" class="img-fluid" alt="" loading="lazy">
+								<h3>
+									<a href="#">Novem Eco Resort</a>
+								</h3>
+							</div>
+							<div class="single-client">
+								<img src="images/clients/Pearl Harbour.png" class="img-fluid" alt="" loading="lazy">
+								<h3>
+									<a href="#">Pearl Harbour</a>
+								</h3>
+							</div>
+							<div class="single-client">
+								<img src="images/clients/Platinum Hotels by Sheltech.png" class="img-fluid" alt=""
+									loading="lazy">
+								<h3>
+									<a href="#">Platinum Hotels by Sheltech</a>
+								</h3>
+							</div>
+							<div class="single-client">
+								<img src="images/clients/Ramada Hotel.png" class="img-fluid" alt="" loading="lazy">
+								<h3>
+									<a href="#">Ramada Hotel</a>
+								</h3>
+							</div>
+							<div class="single-client">
+								<img src="images/clients/Savanna Eco Resort.jpeg" class="img-fluid" alt=""
+									loading="lazy">
+								<h3>
+									<a href="#">Savanna Eco Resort</a>
+								</h3>
+							</div>
+							<div class="single-client">
+								<img src="images/clients/Shopnodip Resort.png" class="img-fluid" alt="" loading="lazy">
+								<h3>
+									<a href="#">Shopnodip Resort</a>
+								</h3>
+							</div>
+							<div class="single-client">
+								<img src="images/clients/Six Seasons Hotel.png" class="img-fluid" alt="" loading="lazy">
+								<h3>
+									<a href="#">Six Seasons Hotel</a>
+								</h3>
+							</div>
+							<div class="single-client">
+								<img src="images/clients/SKS Inn Resort.png" class="img-fluid" alt="" loading="lazy">
+								<h3>
+									<a href="#">SKS Inn Resort</a>
+								</h3>
+							</div>
+							<div class="single-client">
+								<img src="images/clients/Sonargaon Royal Resert.png" class="img-fluid" alt=""
+									loading="lazy">
+								<h3>
+									<a href="#">Sonargaon Royal Resert</a>
+								</h3>
+							</div>
+							<div class="single-client">
+								<img src="images/clients/The Royena Resort.jpg" class="img-fluid" alt="" loading="lazy">
+								<h3>
+									<a href="#">The Royena Resort</a>
+								</h3>
+							</div>
+							<div class="single-client">
+								<img src="images/clients/The Zabeer Dhaka.png" class="img-fluid" alt="" loading="lazy">
+								<h3>
+									<a href="#">The Zabeer Dhaka</a>
+								</h3>
+							</div>
+							<div class="single-client">
+								<img src="images/clients/The Zabeer Jashore.png" class="img-fluid" alt=""
+									loading="lazy">
+								<h3>
+									<a href="#">The Zabeer Jashore</a>
 								</h3>
 							</div>
 						</div>
@@ -567,26 +764,17 @@
 		<!-- End Testimonial Section Two -->
 
 		<!-- Team Section -->
-		<section class="team-section style-two">
+		<section class="team-section style-two carousel-column">
 			<div class="pattern-layer" style="background-image:url(images/background/pattern-18.png)"></div>
 			<div class="container">
 				<!-- Sec Title -->
 				<div class="title-box">
 					<h2>We're Dedic Features <br> <span>Expert Team</span></h2>
 				</div>
-
-				<div class="row clearfix">
-
-					<!-- Team Block -->
-					<div class="team-block style-two col-lg-3 col-md-6 col-sm-12">
+				<!-- Team members list -->
+				<div class="teamCarousel owl-carousel owl-theme">
+					<div class="team-block style-two">
 						<div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-							<!-- <ul class="social-icons">
-								<li><a href="#"><span class="fa fa-facebook-f"></span></a></li>
-								<li><a href="#"><span class="fa fa-twitter"></span></a></li>
-								<li><a href="#"><span class="fa fa-skype"></span></a></li>
-
-								<li><a href="#"><span class="fa fa-linkedin"></span></a></li>
-							</ul> -->
 							<div class="image">
 								<a href="#"><img src="images/resource/team-1.png" alt="" /></a>
 							</div>
@@ -597,16 +785,8 @@
 						</div>
 					</div>
 
-					<!-- Team Block -->
-					<div class="team-block style-two col-lg-3 col-md-6 col-sm-12">
+					<div class="team-block style-two">
 						<div class="inner-box wow fadeInLeft" data-wow-delay="250ms" data-wow-duration="1500ms">
-							<!-- <ul class="social-icons">
-								<li><a href="#"><span class="fa fa-facebook-f"></span></a></li>
-								<li><a href="#"><span class="fa fa-twitter"></span></a></li>
-								<li><a href="#"><span class="fa fa-skype"></span></a></li>
-
-								<li><a href="#"><span class="fa fa-linkedin"></span></a></li>
-							</ul> -->
 							<div class="image">
 								<a href="#"><img src="images/resource/team-2.png" alt="" /></a>
 							</div>
@@ -617,16 +797,8 @@
 						</div>
 					</div>
 
-					<!-- Team Block -->
-					<div class="team-block style-two col-lg-3 col-md-6 col-sm-12">
+					<div class="team-block style-two">
 						<div class="inner-box wow fadeInLeft" data-wow-delay="500ms" data-wow-duration="1500ms">
-							<!-- <ul class="social-icons">
-								<li><a href="#"><span class="fa fa-facebook-f"></span></a></li>
-								<li><a href="#"><span class="fa fa-twitter"></span></a></li>
-								<li><a href="#"><span class="fa fa-skype"></span></a></li>
-
-								<li><a href="#"><span class="fa fa-linkedin"></span></a></li>
-							</ul> -->
 							<div class="image">
 								<a href="#"><img src="images/resource/team-3.png" alt="" /></a>
 							</div>
@@ -637,16 +809,8 @@
 						</div>
 					</div>
 
-					<!-- Team Block -->
-					<div class="team-block style-two col-lg-3 col-md-6 col-sm-12">
+					<div class="team-block style-two">
 						<div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-							<!-- <ul class="social-icons">
-								<li><a href="#"><span class="fa fa-facebook-f"></span></a></li>
-								<li><a href="#"><span class="fa fa-twitter"></span></a></li>
-								<li><a href="#"><span class="fa fa-skype"></span></a></li>
-
-								<li><a href="#"><span class="fa fa-linkedin"></span></a></li>
-							</ul> -->
 							<div class="image">
 								<a href="#"><img src="images/resource/team-1.png" alt="" /></a>
 							</div>
@@ -657,6 +821,17 @@
 						</div>
 					</div>
 
+					<div class="team-block style-two">
+						<div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+							<div class="image">
+								<a href="#"><img src="images/resource/team-1.png" alt="" /></a>
+							</div>
+							<div class="lower-content">
+								<h3><a href="#">Suresh Bollom</a></h3>
+								<div class="designation">Former Developer</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -1119,16 +1294,20 @@
 				<div class="row clearfix">
 
 					<!-- Image Column -->
-					<div class="image-column col-lg-6 col-md-12 col-sm-12">
+					<div class="map-column col-lg-7 col-md-12 col-sm-12">
 						<div class="inner-column">
-							<div class="image">
+							<!-- <div class="image">
 								<img src="images/resource/subscribe.png" alt="" />
-							</div>
+							</div> -->
+							<iframe
+								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3648.4626181842095!2d90.38521487593025!3d23.87320888404944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c5a3708c3b13%3A0x7bb65effe2cd6b78!2sTechno%20Sense%20Limited!5e0!3m2!1sen!2sbd!4v1722597179213!5m2!1sen!2sbd"
+								height="550" style="border:0;" allowfullscreen="" loading="lazy"
+								referrerpolicy="no-referrer-when-downgrade"></iframe>
 						</div>
 					</div>
 
 					<!-- Form Column -->
-					<div class="form-column col-lg-6 col-md-12 col-sm-12">
+					<div class="form-column col-lg-5 col-md-12 col-sm-12">
 						<div class="inner-column">
 							<h2>Contact with us</span></h2>
 							<!-- Subscribe Form -->
@@ -1381,11 +1560,11 @@
 									<div class="footer-widget links-widget">
 										<h4>Say Hello</h4>
 										<div class="address-widget">
-											<p><span>Address:</span>House 39, Road 13, Sector 13,
+											<p><span>Address: </span>House 39, Road 13, Sector 13,
 												<br> Uttara, Dhaka.
 											</p>
-											<p><span>Phone:</span>+8801601688000</p>
-											<p><span>Email:</span>technosenseltd@gmail.com </p>
+											<p><span>Phone: </span>+8801601688000</p>
+											<p><span>Email: </span>technosenseltd@gmail.com </p>
 										</div>
 									</div>
 								</div>
@@ -1482,6 +1661,13 @@
 
 	</div>
 	<!--End page wrapper-->
+
+	<!-- Talk to sales -->
+	<a class="talk-to-sales-btn" href="tel:+8801601688000">
+		<i class="fa fa-phone" aria-hidden="true"></i>
+		<!-- <i class="fa fa-volume-control-phone" aria-hidden="true"></i> -->
+		<span>Talk to sales</span>
+	</a>
 
 	<!--Scroll to top-->
 	<div class="scroll-to-top scroll-to-target" data-target="html">
