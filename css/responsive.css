@@ -402,6 +402,10 @@
 }
 
 @media only screen and (max-width: 767px) {
+
+    .banner-section-three .image-layer-two {
+        filter: grayscale(0.7);
+    }
     
     .clients-list {
         grid-template-columns: repeat(2, 1fr);
@@ -990,6 +994,12 @@
 }
 
 @media only screen and (max-width: 479px) {
+
+    .btn-style-two,
+    .btn-style-five,
+    .btn-style-three {
+        padding: 12px 36px;
+    }
     
     .clients-list {
         grid-template-columns: repeat(1, 1fr);
@@ -1027,18 +1037,9 @@
     .team-block .inner-box .lower-content {
         padding-left: 30px;
     }
-    .sidebar-page-container .group-title h4,
-    .banner-section-three .content h1,
-    .subscribe-section .form-column h2,
-    .team-section .title-box h2,
-    .work-section-two .content-column h2,
-    .testimonial-section-three .carousel-column h2,
-    .call-to-action-section .content-column h2,
-    .call-to-action-section-two .content h2,
-    .featured-section .content-column h2,
-    .banner-section-two .content-column h1,
-    .banner-section .content-column h1 {
-        font-size: 30px;
+    .sidebar-page-container .group-title h4, .banner-section-three .content h1, .subscribe-section .form-column h2, .team-section .title-box h2, .work-section-two .content-column h2, .testimonial-section-three .carousel-column h2, .call-to-action-section .content-column h2, .call-to-action-section-two .content h2, .featured-section .content-column h2, .banner-section-two .content-column h1, .banner-section .content-column h1 {
+        font-size: 28px;
+        margin-bottom: 30px;
     }
     .testimonial-block .inner-box .upper-box .upper-inner .image {
         position: relative;
