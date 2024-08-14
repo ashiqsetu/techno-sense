@@ -6,6 +6,25 @@
     }
 }
 
+
+@media (max-width: 1399.98px) {
+    .banner-section-three .content {
+        width: 600px;
+    }
+    .banner-section-three .content h1 {
+        font-size: 30px;
+    }
+
+    .banner-section-three .content .btn-box .theme-btn {
+        margin-right: 20px;
+        padding: 12px 36px;
+    }
+    .banner-section-three .content .title {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+}
+
 @media only screen and (max-width: 1340px) {
     .page-wrapper {
         overflow: hidden;
@@ -50,9 +69,9 @@
     .main-slider h2 {
         font-size: 36px;
     }
-    .main-header .header-upper .logo-box {
+    /* .main-header .header-upper .logo-box {
         padding-top: 25px;
-    }
+    } */
     .main-header .nav-outer {
         margin-top: 0px;
     }
