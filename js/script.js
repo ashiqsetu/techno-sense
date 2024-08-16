@@ -1110,6 +1110,23 @@
 		});
 
 	}
+	if ($('.vendorx-gallery').length) {
+
+		$('.vendorx-gallery').fancybox({
+
+			openEffect: 'fade',
+
+			closeEffect: 'fade',
+
+			helpers: {
+
+				media: {}
+
+			}
+
+		});
+
+	}
 
 
 
