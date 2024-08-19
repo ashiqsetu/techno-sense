@@ -1,9 +1,6 @@
 (function ($) {
 
-
-
 	"use strict";
-
 
 
 	//Hide Loading Box (Preloader)
@@ -40,51 +37,7 @@
 	}
 
 
-
 	headerStyle();
-
-
-
-
-
-	//Hidden Sidebar
-
-	if ($('.hidden-bar').length) {
-
-		var hiddenBar = $('.sidebar-btn');
-
-		var hiddenBarOpener = $('.sidebar-btn');
-
-		var hiddenBarCloser = $('.hidden-bar-closer');
-
-		$('.hidden-bar-wrapper').mCustomScrollbar();
-
-
-
-		//Show Sidebar
-
-		hiddenBarOpener.on('click', function () {
-
-			hiddenBar.addClass('visible-sidebar');
-
-		});
-
-
-
-		//Hide Sidebar
-
-		hiddenBarCloser.on('click', function () {
-
-			hiddenBar.removeClass('visible-sidebar');
-
-		});
-
-	}
-
-
-
-
-
 
 
 	//Submenu Dropdown Toggle
@@ -92,7 +45,6 @@
 	if ($('.main-header li.dropdown ul').length) {
 
 		$('.main-header li.dropdown').append('<div class="dropdown-btn"><span class="fa fa-angle-down"></span></div>');
-
 
 
 		//Dropdown Button
@@ -104,7 +56,6 @@
 		});
 
 
-
 		//Disable dropdown parent link
 
 		$('.main-header .navigation li.dropdown > a,.hidden-bar .side-menu li.dropdown > a').on('click', function (e) {
@@ -112,7 +63,6 @@
 			e.preventDefault();
 
 		});
-
 
 
 		//Main Menu Fade Toggle
@@ -123,56 +73,12 @@
 
 		});
 
-
-
 	}
-
-
-
-
-
-	//Hidden Sidebar
-
-	if ($('.hidden-bar').length) {
-
-		var hiddenBar = $('.hidden-bar');
-
-		var hiddenBarOpener = $('.info-btn');
-
-		var hiddenBarCloser = $('.hidden-bar-closer');
-
-		$('.hidden-bar-wrapper').mCustomScrollbar();
-
-
-
-		//Show Sidebar
-
-		hiddenBarOpener.on('click', function () {
-
-			hiddenBar.addClass('visible-sidebar');
-
-		});
-
-
-
-		//Hide Sidebar
-
-		hiddenBarCloser.on('click', function () {
-
-			hiddenBar.removeClass('visible-sidebar');
-
-		});
-
-	}
-
-
-
 
 
 	//Fixed Right Top Consultation Form Toggle
 
 	if ($('.main-header .header-upper .outer-box.info-btn').length) {
-
 
 
 		//Show Form
@@ -184,7 +90,6 @@
 			$('body').addClass('background-visible');
 
 		});
-
 
 
 		//Hide Form
@@ -214,58 +119,7 @@
 		});
 
 
-
 	}
-
-
-
-	//Progress Bar
-
-	if ($('.search-box-outer').length) {
-
-		$('.search-box-outer').on('click', function () {
-
-			$('.dez-quik-search').addClass('view-top-search');
-
-		});
-
-	}
-
-
-
-	//Progress Bar
-
-	if ($('#quik-search-remove').length) {
-
-		$('#quik-search-remove').on('click', function () {
-
-			$('.dez-quik-search').removeClass('view-top-search');
-
-		});
-
-	}
-
-
-
-
-
-	//Progress Bar
-
-	if ($('.progress-line').length) {
-
-		$('.progress-line').appear(function () {
-
-			var el = $(this);
-
-			var percent = el.data('width');
-
-			$(el).css('width', percent + '%');
-
-		}, { accY: 0 });
-
-	}
-
-
 
 
 
@@ -327,10 +181,6 @@
 
 
 
-
-
-
-
 	//Main Slider Carousel
 	if ($('.main-slider-carousel').length) {
 		$('.main-slider-carousel').owlCarousel({
@@ -362,14 +212,6 @@
 			}
 		});
 	}
-
-
-
-
-
-
-
-
 
 
 
@@ -416,9 +258,6 @@
 		});
 
 	}
-
-
-
 
 
 	//Main Slider Carousel
@@ -521,13 +360,13 @@
 
 				600: {
 
-					items: 5
+					items: 3
 
 				},
 
 				800: {
 
-					items: 5
+					items: 3
 
 				},
 
@@ -554,7 +393,6 @@
 		});
 
 	}
-
 
 
 	// TeamCarousel
@@ -592,13 +430,13 @@
 
 				600: {
 
-					items: 5
+					items: 2
 
 				},
 
 				800: {
 
-					items: 5
+					items: 2
 
 				},
 
@@ -627,9 +465,74 @@
 	}
 
 
+	// Blog Carousel
+	if ($('.blogCarousel').length) {
 
+		$('.blogCarousel').owlCarousel({
 
+			animateOut: 'fadeOut',
 
+			animateIn: 'fadeIn',
+
+			loop: true,
+
+			infinite: true,
+
+			margin: 20,
+
+			nav: true,
+
+			smartSpeed: 500,
+
+			drag: true,
+
+			autoplay: 1000,
+
+			navText: ['<span class="fa fa-angle-left"></span>', '<span class="fa fa-angle-right"></span>'],
+
+			responsive: {
+
+				0: {
+
+					items: 1
+
+				},
+
+				600: {
+
+					items: 2
+
+				},
+
+				800: {
+
+					items: 2
+
+				},
+
+				1024: {
+
+					items: 3
+
+				},
+
+				1200: {
+
+					items: 3
+
+				},
+
+				1500: {
+
+					items: 3
+
+				}
+
+			}
+
+		});
+
+	}
 
 
 	// Single Item Carousel
@@ -697,11 +600,6 @@
 		});
 
 	}
-
-
-
-
-
 
 
 	// Gallery Carousel
@@ -804,10 +702,6 @@
 	});
 
 
-
-
-
-
 	// Sponsors Carousel
 
 	if ($('.sponsors-carousel').length) {
@@ -865,8 +759,6 @@
 	}
 
 
-
-
 	// Testimonial Carousel
 
 	if ($('.testimonial-carousel').length) {
@@ -922,11 +814,6 @@
 		});
 
 	}
-
-
-
-
-
 
 
 	// Three Item Carousel
@@ -996,11 +883,6 @@
 	}
 
 
-
-
-
-
-
 	//Tabs Box
 
 	if ($('.tabs-box').length) {
@@ -1038,11 +920,6 @@
 	}
 
 
-
-
-
-
-
 	//Custom Seclect Box
 
 	if ($('.custom-select-box').length) {
@@ -1053,8 +930,6 @@
 
 
 
-
-
 	//Gallery Filters
 
 	if ($('.filter-list').length) {
@@ -1062,8 +937,6 @@
 		$('.filter-list').mixItUp({});
 
 	}
-
-
 
 
 
@@ -1084,11 +957,6 @@
 		});
 
 	}
-
-
-
-
-
 
 
 	//LightBox / Fancybox
@@ -1127,9 +995,6 @@
 		});
 
 	}
-
-
-
 
 
 	//Contact Form Validation
@@ -1174,8 +1039,6 @@
 
 
 
-
-
 	// Scroll to a Specific Div
 
 	if ($('.scroll-to-target').length) {
@@ -1197,9 +1060,6 @@
 		});
 
 	}
-
-
-
 
 
 	// Elements Animation
@@ -1227,8 +1087,6 @@
 		wow.init();
 
 	}
-
-
 
 
 
