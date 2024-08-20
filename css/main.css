@@ -8278,6 +8278,10 @@ img{
 
  ***/
 
+ #contact .info {
+	color: #283d50;
+  }
+  
 .contact-form{
 	position:relative;
 	max-width:980px;
