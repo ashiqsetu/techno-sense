@@ -2477,15 +2477,15 @@ img{
 }
 
 .portfolio-img {
-    height: 200px;
+    /* height: 200px; */
     align-content: center;
 }
 
 .single-portfolio img {
     margin: 0 auto;
     position: relative;
-    height: 100%;
-    width: 200px;
+    /* height: 100%; */
+    width: 180px;
 }
 
 /* .single-portfolio:before {
