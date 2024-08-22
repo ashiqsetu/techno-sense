@@ -3694,9 +3694,10 @@ img{
 
 ***/
 
-.main-footer{
-	position:relative;
-	padding:170px 0px 0px;
+.main-footer {
+    position: relative;
+    padding: 170px 0px 0px;
+    overflow: hidden;
 }
 
 .main-footer.margin-top{
