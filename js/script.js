@@ -346,7 +346,9 @@
 
 			drag: true,
 
-			autoplay: 1000,
+			autoplay: 100,
+
+			autoplayTimeout: 2000,
 
 			navText: ['<span class="fa fa-angle-left"></span>', '<span class="fa fa-angle-right"></span>'],
 
@@ -418,6 +420,8 @@
 
 			autoplay: 1000,
 
+			autoplayTimeout: 2000,
+
 			navText: ['<span class="fa fa-angle-left"></span>', '<span class="fa fa-angle-right"></span>'],
 
 			responsive: {
@@ -487,6 +491,8 @@
 			drag: true,
 
 			autoplay: 1000,
+
+			autoplayTimeout: 2000,
 
 			navText: ['<span class="fa fa-angle-left"></span>', '<span class="fa fa-angle-right"></span>'],
 
@@ -672,34 +678,37 @@
 
 	// gallery work 
 
-	$('.gallery-section').imagesLoaded(function () {
-		var $grid = $('.galleryContainer').isotope({
-			itemSelector: '.gallery-item',
-			percentPosition: true,
-		})
+	if ($('.gallery-section').length) {
 
-		// gallery filtering activation
-		$('.gallery-filter li a').on('click', function () {
-			var filterValue = $(this).attr('data-filter');
-			$grid.isotope({ filter: filterValue });
-		});
+		$('.gallery-section').imagesLoaded(function () {
+			var $grid = $('.galleryContainer').isotope({
+				itemSelector: '.gallery-item',
+				percentPosition: true,
+			})
 
-		// Filter menu active class addition  
-		$('.gallery-filter li').on('click', function (event) {
-			$(this).siblings('.active').removeClass('active');
-			$(this).addClass('active');
-			event.preventDefault();
-		});
+			// gallery filtering activation
+			$('.gallery-filter li a').on('click', function () {
+				var filterValue = $(this).attr('data-filter');
+				$grid.isotope({ filter: filterValue });
+			});
 
-		// LOAD MORE BUTTON FOR gallery
-		$('.load-more-btn').on('click', function (event) {
-			$('.gallery-item').removeClass('hidden');
-			var $grid = $('.galleryContainer').isotope();
-			$(this).hide();
-			$('.gallery-section .load-more').append('<a class="button btn-red-top load-more-btn" href="javascript:void(0)">No More Items</a>')
-			event.preventDefault();
+			// Filter menu active class addition  
+			$('.gallery-filter li').on('click', function (event) {
+				$(this).siblings('.active').removeClass('active');
+				$(this).addClass('active');
+				event.preventDefault();
+			});
+
+			// LOAD MORE BUTTON FOR gallery
+			$('.load-more-btn').on('click', function (event) {
+				$('.gallery-item').removeClass('hidden');
+				var $grid = $('.galleryContainer').isotope();
+				$(this).hide();
+				$('.gallery-section .load-more').append('<a class="button btn-red-top load-more-btn" href="javascript:void(0)">No More Items</a>')
+				event.preventDefault();
+			});
 		});
-	});
+	}
 
 
 	// Sponsors Carousel
@@ -1134,6 +1143,9 @@
 			layer.style.transform = `translateX(${x}px) translateY(${y}px)`;
 		})
 	}
+
+
+	// window.oncontextmenu = function () { console.log("Right Click Disabled "); return false; }
 
 
 

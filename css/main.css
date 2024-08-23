@@ -162,7 +162,7 @@ p{
 	position:relative;
 	margin:0 auto;
 	width:100%;
-	min-width:300px;
+	overflow: hidden;
 }
 
 ul,li{
@@ -3686,6 +3686,296 @@ img{
 	padding-top:0px;
 }
 
+
+/* Breadcrumb sections styles */
+
+
+.section-height {
+    height: 110px;
+}
+
+/* Breadcrumb area styles */
+
+.breadcrumb-section {
+    background: url("../images/banner/breadcrumb.jpeg") no-repeat center center / cover;
+    background-size: cover;
+    height: 550px;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    display: grid;
+    place-content: center;
+}
+
+.breadcrumb-section::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.breadcrumb-content {
+    width: 750px;
+    background: rgba(255,255,255,0.5);
+    padding: 25px;
+    border-radius: 10px;
+    outline: 2px solid rgba(255,255,255,0.5);
+    outline-offset: 10px;
+    backdrop-filter: blur(5px);
+    position: relative;
+    z-index: 2;
+}
+
+.breadcrumb-cat {
+    display: flex;
+    align-items: center;
+	gap: 10px;
+}
+
+.breadcrumb-cat li {
+    color: #fff;
+	position: relative;
+	letter-spacing: 1px;
+	font-size: 16px;
+}
+.breadcrumb-cat li::after {
+	content: '/';
+	margin-left: 10px;
+    color: var(--primary-color);
+}
+.breadcrumb-cat li:last-child:after {
+	display: none;
+}
+.breadcrumb-cat li a {
+    color: var(--primary-color);
+}
+
+.breadcrumb-title {
+    color: var(--primary-color);
+	font-size: 36px;
+	font-weight: 500;
+	margin: 5px 0;
+}
+
+.breadcrumb-content p {
+    color: #222;
+	letter-spacing: 0.5px;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+
+.breadcrumb-content .btn-style-five {
+    font-size: 14px;
+    padding: 8px 25px;
+    border-radius: 6px;
+    letter-spacing: 0.65px;
+}
+
+
+/* Product section styles  */
+
+.product-section {
+	padding: 60px 0 0;
+}
+.product-heading {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.product-client-section.clients-section .patern-layer {
+	display: none;
+}
+
+.productClients {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.gallery-section.product-gallery-section {
+    padding: 80px 0;
+}
+
+.product-gallery-section::before {
+	content: '';
+	background: url(../images/background/pattern-19.png) no-repeat center center / cover;
+	position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.product-gallery-section .galleryFilter {
+	position: relative;
+	z-index: 2;
+}
+
+.product-gallery-section .gallery-item {
+    width: 33.33333333333%;
+    padding: 0 15px;
+    margin-bottom: 30px;
+}
+
+.product-gallery-section .gallery-description {
+    display: block;
+    padding: 10px 15px;
+}
+
+.product-gallery-section .item-thumbnail::before {
+	display: none;
+}
+.product-gallery-section .item-thumbnail::after {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transform: scale(1);
+    border-radius: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+.product-gallery-section .gallery-item:hover .item-thumbnail::after {
+	opacity: 1;
+	visibility: visible;
+    transform: scale(1);
+}
+
+.product-gallery-section .item-thumbnail a {
+	transform: translate(-50%, -50%);
+}
+
+.product-gallery-section .gallery-description h4 {
+	font-size: 16px;
+	margin-bottom: 0;
+	color: var(--primary-color);
+}
+
+.clients-section.product-client-section {
+    padding-top: 0;
+    padding-bottom: 90px;
+}
+
+.product-heading h1 {
+	color: var(--primary-color);
+	font-size: 48px;
+	font-weight: 500;
+}
+.product-heading h1 span {
+	color: var(--secondary-color);
+}
+.product-heading p {
+	font-size: 16px;
+	margin-bottom: 0;
+}
+
+.product-content h3 {
+	position: relative;
+	color: var(--primary-color);
+    font-size: 24px;
+    font-weight: 600;
+	margin-bottom: 15px;
+}
+.product-content p {
+	margin-bottom: 0;
+	font-size: 16px;
+	letter-spacing: 0.5px;
+	line-height: 1.8;
+	color: #333;
+}
+.product-content p span {
+	color: var(--secondary-color);
+	font-weight: 500;
+}
+
+.about-innsense {
+	margin-bottom: 30px;
+}
+
+.innsenseBenefits {
+	margin-bottom: 30px;
+}
+
+.product-content li {
+    font-size: 16px;
+    color: #555;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.product-content li i {
+	background: var(--primary-color);
+	color: #fff;
+	font-size: 12px;
+    height: 18px;
+    width: 18px;
+    line-height: 18px;
+    text-align: center;
+    border-radius: 2px;
+}
+.product-content li:nth-child(n + 2) {
+	margin-top: 12px;
+}
+
+.modules-list {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.gallery-section.product-gallery-section .title-box h2 {
+    margin-bottom: 30px;
+}
+
+
+/* Coming soon section styles */
+
+.coming-soon-section {
+	height: 100vh;
+	background: #f6f6f6;
+	display: grid;
+	place-content: center;
+}
+
+.coming-soon-content {
+	background: #f0f0f0;
+	border-radius: 10px;
+	text-align: center;
+}
+
+.coming-soon-content img {
+	width: 70%;
+	display: block;
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+
+.coming-soon-inner-content {
+    padding: 30px 0;
+}
+
+.coming-soon-inner-content h2 {
+	font-size: 32px;
+	color: var(--secondary-color);
+}
+.coming-soon-inner-content h1 {
+	font-size: 48px;
+	font-weight: 500;
+	color: var(--primary-color);
+	margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
 /***
 
 ====================================================================
@@ -6406,14 +6696,14 @@ img{
 	max-width:inherit;
 }
 
-.direstor-speech-content {
+.director-speech-content {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	align-items: center;
 	gap: 50px;
 	margin-top: 20px;
 }
-.direstor-speech {
+.director-speech {
 	padding: 30px;	
 	left:0px;
 	top:40px;
@@ -6451,11 +6741,11 @@ img{
 	margin-bottom: 0;
 }
 
-.direstor-speech-content-wrapper .title-box {
+.director-speech-content-wrapper .title-box {
 	position: relative;
 	text-align: center;
 }
-.direstor-speech-content-wrapper .title-box h2 {
+.director-speech-content-wrapper .title-box h2 {
 	position: relative;
 	color: #222222;
 	font-size: 36px;
@@ -6463,13 +6753,19 @@ img{
 	line-height: 1.3em;
 	margin-top: 70px;
 }
-.direstor-speech-content-wrapper .title-box h2 span {
+.director-speech-content-wrapper .title-box h2 span {
 	color: var(--secondary-color);
 }
 
-.direstor-speech-content img {
+.director-speech-content img {
 	border-radius: 76% 24% 70% 30% / 33% 74% 26% 67%;
 }
+
+.director-speech p {
+	font-size: 16px;
+	line-height: 1.8;
+}
+
 
 /***
 
